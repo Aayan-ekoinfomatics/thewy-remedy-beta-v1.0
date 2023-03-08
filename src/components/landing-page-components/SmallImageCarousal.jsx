@@ -66,87 +66,40 @@ const SmallImageCarousal = () => {
     return (
         <>
             {/* desktop */}
-            {
-                landingApiData?.small_carousal_images ?
-                    <div className='hidden md:block w-[96%] mx-auto bg-[color:var(--primary-color)] mt-10 py-2 pt-4'>
-                        <div className='flex justify-between items-center gap-2'>
-                            <div className='w-full max-w-[80px] flex justify-center items-center ml-4 font-[500]'>
-                                <h1 className='poppins font-[600] text-[17px]'>Best Sellers</h1>
-                            </div>
-                            <Slider
-                                className="w-full overflow-hidden border border-blue-500"
-                                {...settings}
-                            >
-                                {
-                                    landingApiData?.small_carousal_images?.map((data, index) => (
-                                        <Link to={`/single-product/` + data?.product_id} className="w-full max-w-[150px] border border-red-500 flex justify-center items-center outline-none cursor-pointer mx-2" key={index}>
-                                            <img src={VITE_BASE_LINK_2 + data?.image} className=" w-full object-contain" />
-                                            <h1 className='text-[12px] text-center'>{data?.title}{index}</h1>
-                                        </Link>
-                                    ))
-                                }
-                            </Slider >
-                        </div>
-                    </div >
-                    :
-                    <div className='w-[96%] mx-auto aspect-square hidden md:grid grid-cols-8 mt-10 gap-5 h-[20vh] justify-center items-center'>
-                        {
-                            skeletons?.map((data, i) => (
-                                <>
-                                    {/* skeleton */}
-                                    <div className='w-full'>
-                                        <div className='w-full'>
-                                            <SkeletonTheme baseColor="#f0f0f0" highlightColor="#d6d6d6">
-                                                <p>
-                                                    <Skeleton width='100%' height='20vh' />
-                                                </p>
-                                            </SkeletonTheme>
-                                        </div>
-                                    </div>
-                                </>
-                            ))
-                        }
-                    </div>
-            }
-
-
-
-            {/* mobile */}
-            {
-                landingApiData?.small_carousal_images ?
-                    <nav className='block md:hidden w-full px-4'>
-                        <div className='w-[50%] mx-auto bg-[color:var(--primary-color)] flex justify-center items-center font-[500] mb-2 py-1 rounded-[12px]'>
-                            <h1 className='poppins font-[500] text-[12px] pl-1'>Best Sellers</h1>
-                        </div>
-                        <div className=' w-full bg-[color:var(--primary-color)] mb-14 py-2 rounded-[15px] mt-2'>
+            <>
+                {
+                    landingApiData?.small_carousal_images ?
+                        <div className='hidden md:block w-[96%] mx-auto bg-[color:var(--primary-color)] mt-10 py-2 pt-4'>
                             <div className='flex justify-between items-center gap-2'>
+                                <div className='w-full max-w-[80px] flex justify-center items-center ml-4 font-[500]'>
+                                    <h1 className='poppins font-[600] text-[17px]'>Best Sellers</h1>
+                                </div>
                                 <Slider
-                                    className="w-full overflow-hidden"
-                                    {...mobileSettings}
+                                    className="w-full overflow-hidden border border-blue-500"
+                                    {...settings}
                                 >
                                     {
                                         landingApiData?.small_carousal_images?.map((data, index) => (
-                                            <div className="w-full flex justify-center items-center outline-none cursor-pointer" key={index}>
-                                                <img src={VITE_BASE_LINK_2 + data?.image} className="min-w-[80px] w-full object-contain" />
-                                            </div>
+                                            <Link to={`/single-product/` + data?.product_id} className="w-full max-w-[150px] border border-red-500 flex justify-center items-center outline-none cursor-pointer mx-2" key={index}>
+                                                <img src={VITE_BASE_LINK_2 + data?.image} className=" w-full object-contain" />
+                                                <h1 className='text-[12px] text-center'>{data?.title}{index}</h1>
+                                            </Link>
                                         ))
                                     }
                                 </Slider >
                             </div>
                         </div >
-                    </nav>
-                    :
-                    <div className='w-full aspect-square flex md:hidden h-[10vh] mb-2 justify-center items-center'>
-                        <div className='w-[90%] mx-auto aspect-square grid md:hidden grid-cols-6  gap-5 h-[10vh] justify-center items-center'>
+                        :
+                        <div className='w-[96%] mx-auto aspect-square hidden md:grid grid-cols-8 mt-10 gap-5 h-[20vh] justify-center items-center'>
                             {
-                                mobile_skeletons?.map((data, i) => (
+                                skeletons?.map((data, i) => (
                                     <>
                                         {/* skeleton */}
                                         <div className='w-full'>
                                             <div className='w-full'>
                                                 <SkeletonTheme baseColor="#f0f0f0" highlightColor="#d6d6d6">
                                                     <p>
-                                                        <Skeleton width='100%' height='10vh' />
+                                                        <Skeleton width='100%' height='20vh' />
                                                     </p>
                                                 </SkeletonTheme>
                                             </div>
@@ -155,8 +108,59 @@ const SmallImageCarousal = () => {
                                 ))
                             }
                         </div>
-                    </div>
-            }
+                }
+            </>
+
+
+
+            {/* mobile */}
+            <>
+                {
+                    landingApiData?.small_carousal_images ?
+                        <nav className='block md:hidden w-full px-4'>
+                            <div className='w-[50%] mx-auto bg-[color:var(--primary-color)] flex justify-center items-center font-[500] mb-2 py-1 rounded-[12px]'>
+                                <h1 className='poppins font-[500] text-[12px] pl-1'>Best Sellers</h1>
+                            </div>
+                            <div className=' w-full bg-[color:var(--primary-color)] mb-14 py-2 rounded-[15px] mt-2'>
+                                <div className='flex justify-between items-center gap-2'>
+                                    <Slider
+                                        className="w-full overflow-hidden"
+                                        {...mobileSettings}
+                                    >
+                                        {
+                                            landingApiData?.small_carousal_images?.map((data, index) => (
+                                                <div className="w-full flex justify-center items-center outline-none cursor-pointer" key={index}>
+                                                    <img src={VITE_BASE_LINK_2 + data?.image} className="min-w-[80px] w-full object-contain" />
+                                                </div>
+                                            ))
+                                        }
+                                    </Slider >
+                                </div>
+                            </div >
+                        </nav>
+                        :
+                        <div className='w-full aspect-square flex md:hidden h-[10vh] mb-2 justify-center items-center'>
+                            <div className='w-[90%] mx-auto aspect-square grid md:hidden grid-cols-6  gap-5 h-[10vh] justify-center items-center'>
+                                {
+                                    mobile_skeletons?.map((data, i) => (
+                                        <>
+                                            {/* skeleton */}
+                                            <div className='w-full'>
+                                                <div className='w-full'>
+                                                    <SkeletonTheme baseColor="#f0f0f0" highlightColor="#d6d6d6">
+                                                        <p>
+                                                            <Skeleton width='100%' height='10vh' />
+                                                        </p>
+                                                    </SkeletonTheme>
+                                                </div>
+                                            </div>
+                                        </>
+                                    ))
+                                }
+                            </div>
+                        </div>
+                }
+            </>
         </>
     )
 }
