@@ -39,7 +39,7 @@ const ProductCard = (props) => {
                         {
                             props?.image ?
                                 <Link to={`/single-product/` + props?.id} className='w-full flex justify-center items-center' onClick={() => { }}>
-                                    <img src={VITE_BASE_LINK_2 + props?.image} className='w-[85%] mx-auto' alt="" />
+                                    <img src={VITE_BASE_LINK_2 + props?.image} className='w-[85%] xl:min-w-[300px] mx-auto' alt="" />
                                 </Link>
                                 :
                                 <div className='w-full flex justify-center items-center'>

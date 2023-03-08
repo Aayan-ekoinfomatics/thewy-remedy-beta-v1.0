@@ -75,12 +75,12 @@ const SmallImageCarousal = () => {
                                     <h1 className='poppins font-[600] text-[17px]'>Best Sellers</h1>
                                 </div>
                                 <Slider
-                                    className="w-full overflow-hidden border border-blue-500"
+                                    className="w-full overflow-hidden"
                                     {...settings}
                                 >
                                     {
                                         landingApiData?.small_carousal_images?.map((data, index) => (
-                                            <Link to={`/single-product/` + data?.product_id} className="w-full max-w-[150px] border border-red-500 flex justify-center items-center outline-none cursor-pointer mx-2" key={index}>
+                                            <Link to={`/single-product/` + data?.product_id} className="w-full max-w-[150px] flex justify-center items-center outline-none cursor-pointer mx-2" key={index}>
                                                 <img src={VITE_BASE_LINK_2 + data?.image} className=" w-full object-contain" />
                                                 <h1 className='text-[12px] text-center'>{data?.title}{index}</h1>
                                             </Link>
