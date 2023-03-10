@@ -25,27 +25,27 @@ const SingleOrderDetails = () => {
     //     console.log(orderData)
     // }, [orderData])
 
-    const order_details = {
-        status: 'Delivered',
-        items: [
-            { id: 0, title: 'Lemon Grass Rasam | Instant Mix', quantity: '1', weight: '250', price: '180', image: item },
-            { id: 1, title: 'Garlic Rasam Powder | Instant Mix', quantity: '1', weight: '250', price: '180', image: item },
-            { id: 2, title: 'Neem Flower Rasam | Instant Mix', quantity: '1', weight: '250', price: '180', image: item },
-            { id: 3, title: 'Lemon Grass Rasam | Instant Mix ', quantity: '1', weight: '250', price: '180', image: item },
-        ],
-        customer_name: 'Vivek Khanal',
-        phone_code: '+91',
-        phone_number: '7784555487',
-        address_line_1: 'Realvedic, 76, 7th B cross',
-        address_line_2: 'Kormangla 4th B block',
-        city: 'Bengaluru',
-        state: 'Karnataka',
-        pincode: '50306',
-        country: 'India',
-        item_total: '540',
-        delivery_charges: '30',
-        order_total: '570',
-    };
+    // const order_details = {
+    //     status: 'Delivered',
+    //     items: [
+    //         { id: 0, title: 'Lemon Grass Rasam | Instant Mix', quantity: '1', weight: '250', price: '180', image: item },
+    //         { id: 1, title: 'Garlic Rasam Powder | Instant Mix', quantity: '1', weight: '250', price: '180', image: item },
+    //         { id: 2, title: 'Neem Flower Rasam | Instant Mix', quantity: '1', weight: '250', price: '180', image: item },
+    //         { id: 3, title: 'Lemon Grass Rasam | Instant Mix ', quantity: '1', weight: '250', price: '180', image: item },
+    //     ],
+    //     customer_name: 'Vivek Khanal',
+    //     phone_code: '+91',
+    //     phone_number: '7784555487',
+    //     address_line_1: 'Realvedic, 76, 7th B cross',
+    //     address_line_2: 'Kormangla 4th B block',
+    //     city: 'Bengaluru',
+    //     state: 'Karnataka',
+    //     pincode: '50306',
+    //     country: 'India',
+    //     item_total: '540',
+    //     delivery_charges: '30',
+    //     order_total: '570',
+    // };
 
 
     return (

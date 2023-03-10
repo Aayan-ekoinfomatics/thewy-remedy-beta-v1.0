@@ -69,7 +69,7 @@ const SmallImageCarousal = () => {
             <>
                 {
                     landingApiData?.small_carousal_images ?
-                        <div className='hidden md:block w-[96%] mx-auto bg-[color:var(--primary-color)] mt-10 py-2 pt-4'>
+                        <div className='hidden md:block w-[96%] mx-auto bg-gray-100 mt-10 py-2 pt-4'>
                             <div className='flex justify-between items-center gap-2'>
                                 <div className='w-full max-w-[80px] flex justify-center items-center ml-4 font-[500]'>
                                     <h1 className='poppins font-[600] text-[17px]'>Best Sellers</h1>
@@ -112,16 +112,15 @@ const SmallImageCarousal = () => {
             </>
 
 
-
             {/* mobile */}
             <>
                 {
                     landingApiData?.small_carousal_images ?
                         <nav className='block md:hidden w-full px-4'>
-                            <div className='w-[50%] mx-auto bg-[color:var(--primary-color)] flex justify-center items-center font-[500] mb-2 py-1 rounded-[12px]'>
+                            <div className='w-[50%] mx-auto bg-gray-100 flex justify-center items-center font-[500] mb-2 py-1 rounded-[12px]'>
                                 <h1 className='poppins font-[500] text-[12px] pl-1'>Best Sellers</h1>
                             </div>
-                            <div className=' w-full bg-[color:var(--primary-color)] mb-14 py-2 rounded-[15px] mt-2'>
+                            <div className=' w-full bg-gray-100 mb-14 py-2 rounded-[15px] mt-2'>
                                 <div className='flex justify-between items-center gap-2'>
                                     <Slider
                                         className="w-full overflow-hidden"
@@ -129,7 +128,7 @@ const SmallImageCarousal = () => {
                                     >
                                         {
                                             landingApiData?.small_carousal_images?.map((data, index) => (
-                                                <div className="w-full flex justify-center items-center outline-none cursor-pointer" key={index}>
+                                                <div className="w-full flex justify-center items-center outline-none cursor-pointer border-2 border-gray-100" key={index}>
                                                     <img src={VITE_BASE_LINK_2 + data?.image} className="min-w-[80px] w-full object-contain" />
                                                 </div>
                                             ))

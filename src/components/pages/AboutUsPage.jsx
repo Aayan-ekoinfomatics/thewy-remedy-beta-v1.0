@@ -6,19 +6,19 @@ const AboutUsPage = () => {
     // team
     const teamMembers = [
         {
-            name: "Ranganathan Srinivasan",
-            designation: "Founder & CEO",
+            name: "Mr.Ashwani Sharma",
+            designation: "Director",
             profile_img: picture,
             message:
-                "Technocrat entrepreneur with over 20+ years experience. He is the founder and CEO of EKO Infomatics Solutions. Head of Decision Science Team at GE and VP Research and Analytics at WNS. He dons many hats and loves the challenges of a startup.",
+                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum explicabo possimus blanditiis magnam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum explicabo possimus blanditiis magnam?",
         },
         // 3215
         {
-            name: "Rajlaxmi Shivram",
-            designation: "Head of Product Development",
+            name: "Lorem ipsum",
+            designation: "lorem ipusm dolor",
             profile_img: picture,
             message:
-                "Ex-Portfolio head in the Ecommerce vertical in HDFC Bank and has an overall experience of around 20 years. She loves dabbling in new ideas. Being a mother of a toddler, she has been trying hard to get her hands on healthy options in the market and aims to bridge that gap through Realvedic products. ",
+                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum explicabo possimus blanditiis magnam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum explicabo possimus blanditiis magnam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum explicabo possimus blanditiis magnam?",
         },
         // 3215
     ];
@@ -34,28 +34,20 @@ const AboutUsPage = () => {
                 </div>
 
                 <p className="text-center md:text-xl md:leading-[40px] w-[85%] lg:w-[70%] xl:w-[65%] mx-auto text-[#5B5B5B]">
-                    A healthy life is what we all strive for. Just having right food is
-                    not enough though. Right combination and proportion of food is also
-                    important for an individual. We at RealVedic aim to provide the
-                    wholesome nutrition in the right amount through guidance and carefully
-                    curated products.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis quod corporis itaque laudantium odit exercitationem iste commodi nulla nisi nihil. Saepe quos sint consequuntur, doloribus corrupti aspernatur consectetur non est! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate in nostrum iure quis blanditiis assumenda tempora, magnam a, esse recusandae atque, consequatur similique modi totam? Delectus pariatur aspernatur vel sunt? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda dolores suscipit saepe ea magni veniam quod at itaque consequuntur beatae!
                 </p>
                 <h3 className="font-semibold text-center mt-20 mb-2 text-2xl md:text-3xl  w-[85%] lg:w-[60%] xl:w-[55%] md:w-[70%] mx-auto">
-                    A Shloka from the ancient book Sushrutasamhita, Sutrasthan
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, aspernatur?
                 </h3>
                 <p className="mb-14 text-center text-[#5B5B5B] font-extrabold w-[85%] lg:w-[60%] md:w-[70%] mx-auto ">
-                    (Chapter 15, Shloka 10)
+                    Lorem, ipsum dolor.
                 </p>
                 <h3 className="font-[400px] text-center  mb-14 italic text-2xl md:text-3xl w-[85%] lg:w-[60%] md:w-[70%] xl:w-[55%] mx-auto">
-                    ''Samadosha, Samagnischa, Samadhatumalkriyah- Prasannatmendriyamanah,
-                    Swasth- a iti abhidhiyate"
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam libero odio ullam omnis fugiat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, iste.
                 </h3>
 
                 <p className="text-center md:text-xl md:leading-[40px] w-[85%] lg:w-[70%] xl:w-[65%] mx-auto text-[#5B5B5B] mb-20">
-                    He whose doshas are in balance, appetite is good, all tissues of the
-                    body and all natural urges are functioning properly, and whose
-                    mind,body and spirit are cheerful or full of bliss, he is a healthy
-                    person.
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum temporibus asperiores perferendis qui perspiciatis exercitationem cupiditate quasi quam! Rerum, dolor quam, ipsum numquam itaque, deleniti sequi facere cum porro eligendi quis dolores natus doloremque a illum temporibus? Omnis, accusantium maiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, perferendis cum! Nam quasi error hic ipsum commodi magnam voluptas debitis.
                 </p>
             </div>
 
@@ -69,10 +61,7 @@ const AboutUsPage = () => {
                 </div>
 
                 <p className="text-center md:text-xl md:leading-[40px] w-[85%] lg:w-[70%] xl:w-[65%] mx-auto text-[#5B5B5B]">
-                    We at RealVedic, understand the gap between the ancient way of living
-                    and the modern lifestyle and we intend to bridge the gap. Products we
-                    believe in are the products we offer enabling healthy living. Our
-                    products have the essence of Ayurveda.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia labore veritatis quo tempore modi quibusdam laborum dolorum vitae quisquam dignissimos neque odio natus libero a, magni sed optio quos debitis odit quae qui quod! Ea praesentium voluptates hic repudiandae magnam ipsa possimus reiciendis debitis!
                 </p>
             </div>
 

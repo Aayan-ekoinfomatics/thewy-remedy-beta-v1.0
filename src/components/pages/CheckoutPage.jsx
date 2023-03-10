@@ -129,7 +129,7 @@ const CheckoutPage = () => {
             key_secret: import.meta.env.REACT_APP_RAZORPAY_KEY_SECRET,
             amount: data.data.payment.amount,
             currency: "INR",
-            name: "Realvedic",
+            name: "Thewy Remedy",
             description: "Test teansaction",
             image: "", // add image url
             order_id: data.data.payment.id,

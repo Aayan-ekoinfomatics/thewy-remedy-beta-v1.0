@@ -13,11 +13,11 @@ const Footer = () => {
       heading: "ABOUT",
       contents: [
         {
-          linkName: "The Realvedic Story",
+          linkName: "lorem impum",
           linkTo: "/about-us",
         },
         {
-          linkName: "Shop By Category ",
+          linkName: "lorem ipsum dolor",
           linkTo: "/all-products/0",
         },
         // {
@@ -33,11 +33,11 @@ const Footer = () => {
       heading: "POLICY",
       contents: [
         {
-          linkName: "Return, Refund and Cancellation Policy",
+          linkName: "lorem ipsum dolor sit amet felor",
           linkTo: "/cancellation-policy",
         },
         {
-          linkName: "Terms  & Conditions",
+          linkName: "lorem ipsum dolor",
           linkTo: "/terms-conditions",
         },
       ],
@@ -47,22 +47,22 @@ const Footer = () => {
       heading: "GET IN TOUCH",
       contents: [
         {
-          linkName: "info@realvedic.com",
+          linkName: "example@email.com",
           linkTo: '/'
         },
         {
-          linkName: "+91-8860227160",
+          linkName: "+91-000000000",
           linkTo: '/'
         },
         {
           linkName: facebook,
-          linkTo: 'https://www.facebook.com/realvedic1',
-          linkTo_2: 'https://www.instagram.com/realvedic1/',
+          linkTo: 'https://www.facebook.com/client_name',
+          linkTo_2: 'https://www.instagram.com/client_name/',
           linkName2: instagram,
         },
         {
           linkName: instagram,
-          linkTo: 'https://www.instagram.com/realvedic1/'
+          linkTo: 'https://www.instagram.com/client_name/'
         },
       ],
     },

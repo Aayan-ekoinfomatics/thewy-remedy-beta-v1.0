@@ -105,10 +105,10 @@ const Sidebar = () => {
             <NavLink to='/account' className='w-full flex px-5 border-b justify-start gap-2 cursor-pointer' onClick={() => setSidebarToggle(false)}>
               {/* <img src={profile} className="w-full max-w-[25px]" alt="" /> */}
               <h1 className='text-[14px] poppins py-3'>Account</h1>
-            </NavLink>
-            {/* <NavLink to='/cart' className='w-full flex px-5 border-b justify-start gap-2 cursor-pointer' onMouseEnter={() => setCartView(true)} onMouseLeave={() => setCartView(false)}>
-            <h1 className='text-[14px] poppins py-3'>Cart</h1>
-          </NavLink> */}
+            </NavLink>  
+            <NavLink to='/about-us' className='w-full flex px-5 border-b justify-start gap-2 cursor-pointer' onMouseEnter={() => setCartView(true)} onMouseLeave={() => setCartView(false)}>
+            <h1 className='text-[14px] poppins py-3'>About Us</h1>
+          </NavLink>
           </div>
 
 

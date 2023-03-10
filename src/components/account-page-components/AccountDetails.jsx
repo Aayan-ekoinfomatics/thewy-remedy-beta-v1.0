@@ -204,7 +204,7 @@ const AccountDetails = () => {
 
                 {/* submit & reset password button */}
                 <div className='w-full flex justify-between items-center my-8'>
-                    <button className='py-1 px-2 text-[16px] text-white shadow-md active:scale-[0.96] bg-red-600'>Reset Password</button>
+                    {/* <button className='py-1 px-2 text-[16px] text-white shadow-md active:scale-[0.96] bg-red-600'>Reset Password</button> */}
                     <button className='text-[16px] font-[500] px-4 py-2 active:scale-[0.96] shadow-md bg-[color:var(--button-primary)]' onClick={async () => {
                         await axios.post(VITE_BASE_LINK_2 + 'UserAccountEdit', accountData).then((response) => {
                             if (response?.data?.message) {

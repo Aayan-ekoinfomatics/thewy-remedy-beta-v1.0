@@ -5,14 +5,14 @@ const TermsAndConditionsPage = () => {
     {
       subHeading: "USE OF CONTENT",
       content: [
-        "All logos, brands, marks headings, labels, names, signatures, numerals, shapes or any combinations thereof, appearing in this site, except as otherwise noted, are properties either owned, or used under licence, by the business and / or its associate entities who feature on this Website. The use of these properties or any other content on this site, except as provided in these terms and conditions or in the site content, is strictly prohibited. You may not sell or modify the content of this Website or reproduce, display, publicly perform, distribute, or otherwise use the materials in any way for any public or commercial purpose without the company's or entity’s written permission.",
+        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur dolorem placeat nisi dicta suscipit incidunt ad veniam quasi alias modi ex, inventore iste totam, maiores odit molestias tempora qui nostrum, similique consequatur minus. Similique, quo dolorem voluptatum laborum repellat soluta. Nihil, aliquid quaerat. Deleniti eos totam neque perspiciatis laborum maxime alias dolor, laboriosam enim corporis hic incidunt ab commodi quasi culpa tenetur odio nemo vitae tempore quisquam, velit beatae, distinctio porro! Esse reprehenderit hic mollitia suscipit facilis dignissimos, ut illo neque. Enim voluptates asperiores nisi dicta dolorem quia ipsa maxime.",
       ],
     },
 
     {
       subHeading: "USE OF CONTENT",
       content: [
-        "All logos, brands, marks headings, labels, names, signatures, numerals, shapes or any combinations thereof, appearing in this site, except as otherwise noted, are properties either owned, or used under licence, by the business and / or its associate entities who feature on this Website. The use of these properties or any other content on this site, except as provided in these terms and conditions or in the site content, is strictly prohibited. You may not sell or modify the content of this Website or reproduce, display, publicly perform, distribute, or otherwise use the materials in any way for any public or commercial purpose without the company's or entity’s written permission.",
+        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur dolorem placeat nisi dicta suscipit incidunt ad veniam quasi alias modi ex, inventore iste totam, maiores odit molestias tempora qui nostrum, similique consequatur minus. Similique, quo dolorem voluptatum laborum repellat soluta. Nihil, aliquid quaerat. Deleniti eos totam neque perspiciatis laborum maxime alias dolor, laboriosam enim corporis hic incidunt ab commodi quasi culpa tenetur odio nemo vitae tempore quisquam, velit beatae, distinctio porro! Esse reprehenderit hic mollitia suscipit facilis dignissimos, ut illo neque. Enim voluptates asperiores nisi dicta dolorem quia ipsa maxime.",
       ],
     },
   ];
@@ -24,52 +24,24 @@ const TermsAndConditionsPage = () => {
         </h1>
         <div className="w-[90%] mx-auto md:w-[80%]">
           <p className="my-10  ">
-            The terms "We" / "Us"/ "Our"/”Company” individually and collectively
-            refer to RealVedic Enterprises Private Limited and the terms
-            "Visitor”/ ”User”/”Customers” refer to the users. This page states
-            the Terms and Conditions under which you (Visitor) may visit this
-            website (“www.realvedic.com”). Please read this page carefully. If
-            you do not accept the Terms and Conditions stated here, we would
-            request you to exit this site. The business, any of its business
-            divisions and / or its subsidiaries, associate companies or
-            subsidiaries to subsidiaries or such other investment companies (in
-            India or abroad) reserve their respective rights to revise these
-            Terms and Conditions at any time by updating this posting. You
-            should visit this page periodically to re-appraise yourself of the
-            Terms and Conditions, because they are binding on all users of this
-            Website.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur dolorem placeat nisi dicta suscipit incidunt ad veniam quasi alias modi ex, inventore iste totam, maiores odit molestias tempora qui nostrum, similique consequatur minus. Similique, quo dolorem voluptatum laborum repellat soluta. Nihil, aliquid quaerat. Deleniti eos totam neque perspiciatis laborum maxime alias dolor, laboriosam enim corporis hic incidunt ab commodi quasi culpa tenetur odio nemo vitae tempore quisquam, velit beatae, distinctio porro! Esse reprehenderit hic mollitia suscipit facilis dignissimos, ut illo neque. Enim voluptates asperiores nisi dicta dolorem quia ipsa maxime.
           </p>
           <h1 className="font-bold  my-5">USE OF CONTENT</h1>
           <p>
-            All logos, brands, marks headings, labels, names, signatures,
-            numerals, shapes or any combinations thereof, appearing in this
-            site, except as otherwise noted, are properties either owned, or
-            used under licence, by the business and / or its associate entities
-            who feature on this Website. The use of these properties or any
-            other content on this site, except as provided in these terms and
-            conditions or in the site content, is strictly prohibited. You may
-            not sell or modify the content of this Website or reproduce,
-            display, publicly perform, distribute, or otherwise use the
-            materials in any way for any public or commercial purpose without
-            the company's or entity’s written permission.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta reprehenderit in aliquid quasi, consequatur itaque cupiditate enim unde praesentium illo esse consectetur repellendus debitis saepe quo asperiores necessitatibus, fugiat dolore ut illum blanditiis! Vero corporis aperiam pariatur eveniet, quas quo voluptatem commodi a recusandae voluptas odio iure rerum quam. Dolorum mollitia non dolorem vero reprehenderit cupiditate adipisci pariatur sequi exercitationem, tenetur atque assumenda fugit optio accusantium deserunt aperiam consequatur maxime vitae repudiandae minima delectus voluptatum a accusamus. Eaque expedita dolorem nostrum impedit, ut quidem quia laborum ullam recusandae aliquid ipsam nemo quam sint quod blanditiis explicabo minus sed eveniet ducimus laboriosam illum animi corrupti. Adipisci ullam fuga, dolorem voluptatibus minima molestias voluptatem quod fugit minus in qui, eveniet doloribus assumenda?
           </p>
           <h1 className="font-bold  my-5">Acceptable Website Use</h1>
           <h2 className="font-semibold mb-1">(A)</h2>
           <p>
-            Security Rules Visitors are prohibited from violating or attempting
-            to violate the security of the Web site, including, without
-            limitation,
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus magnam eaque, distinctio, dolor quos esse odio vel sapiente ducimus eveniet veritatis perferendis quisquam voluptatibus dicta eius ad, ex nesciunt vitae.
           </p>
           <p className="mb-3">
             <strong className="font-semibold ">(1)</strong> accessing data not
-            intended for such user or logging into a server or account which the
-            user is not authorised to access,
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto repudiandae recusandae pariatur obcaecati. Incidunt odio iure omnis dolore in tempora neque nostrum nemo recusandae aliquam placeat hic officia facilis animi consequuntur aspernatur, quis nihil eum libero corrupti? Qui, eum quibusdam?
           </p>
 
           <p className="mb-3">
-            <strong className="font-semibold ">(1)</strong> accessing data not
-            intended for such user or logging into a server or account which the
-            user is not authorised to access,
+            <strong className="font-semibold ">(1)</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem natus ab voluptatibus quia culpa, assumenda consequatur ea maiores facilis tempore fugiat recusandae veniam alias nesciunt soluta reiciendis ipsam est pariatur? Beatae ducimus corrupti alias debitis, voluptatem animi doloremque eum repudiandae!
           </p>
         </div>
       </div>

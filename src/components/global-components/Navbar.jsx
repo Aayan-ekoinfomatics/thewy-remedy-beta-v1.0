@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import logo from '../../assets/icons/realvedic_full_logo_rasheed_black.svg'
+import logo from '../../assets/images/logo_dark.png'
 import blog from '../../assets/icons/blogs_2.svg'
 import mom_baby from '../../assets/icons/mom&baby.svg'
 import products from '../../assets/icons/products.svg'
@@ -17,11 +17,11 @@ import axios from 'axios'
 import { VITE_BASE_LINK, VITE_BASE_LINK_2 } from '../../../baseLink'
 import cartPageAtom from '../../recoil/atoms/cartPageAtom'
 import { toast } from 'react-toastify'
-import cross from "../../assets/icons/cross.svg";
+import cross from "../../assets/icons/cross_red.svg";
 import search from '../../assets/icons/search.svg'
 import tabData from '../../mockApi/categoryTabs'
 import landingPageApiDataAtom from '../../recoil/atoms/landingPageApiDataAtom'
-import mobile_logo from '../../assets/icons/realvedic_logo_flower.svg'
+import mobile_logo from '../../assets/images/logo_dark.png'
 import text from '../../assets/icons/realvedic_logo_title.svg'
 
 const Navbar = () => {
@@ -110,10 +110,10 @@ const Navbar = () => {
                     <div className='w-[70%] flex justify-start items-center gap-14 pl-14'>
                         <div className='w-fit'>
                             <NavLink to='/' className='flex justify-center items-center'>
-                                {/* <img src={logo} className="cursor-pointer w-[70px]" alt="" /> */}
-                                <div className='w-[70px] h-[70px] border border-gray-500 flex justify-center items-center'>
+                                <img src={logo} className="cursor-pointer w-[70px]" alt="" />
+                                {/* <div className='w-[70px] h-[70px] border border-gray-500 flex justify-center items-center'>
                                     <p className='text-[12px]'>main Logo</p>
-                                </div>
+                                </div> */}
                             </NavLink>
                         </div>
 
@@ -301,7 +301,7 @@ const Navbar = () => {
                                                                 <h1 className='text-[13px] helvetica font-[400] text-green-600 '>You saved ₹ {data?.saved}</h1>
                                                             </div>
                                                             <div className='w-full max-w-[50px] flex justify-center items-center'>
-                                                                <img src={cross} className='w-full max-w-[13px] cursor-pointer' alt="" onClick={async () => {
+                                                                <img src={cross} className='w-full max-w-[25px] rounded-[5px] bg-white active:scale-[0.9] active:bg-gray-300 transition-all duration-300 shadow-md cursor-pointer' alt="" onClick={async () => {
                                                                     let formdata = new FormData()
                                                                     formdata.append('prod_id', data?.product_id)
                                                                     formdata.append('token', localStorage.getItem('token'))

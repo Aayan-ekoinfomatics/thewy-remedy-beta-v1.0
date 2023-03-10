@@ -204,10 +204,10 @@ const SingleProduct = () => {
 
 
                     {/* product images */}
-                    <div className='flex-1 min-h-[400px] lg:w-[60%] flex flex-col-reverse xl:flex-row md:justify-center xl:justify-end items-end xl:items-center'>
+                    <div className='flex-1 min-h-[400px] lg:w-[60%] flex flex-col-reverse xl:flex-row gap-3 md:justify-center xl:justify-end items-end xl:items-center mr-2'>
 
                         {/* vertical images */}
-                        <div className='w-[90%] xl:w-[20%] flex xl:flex-col justify-center xl:justify-evenly items-end'>
+                        <div className='w-[90%] xl:w-[20%] flex xl:flex-col gap-3 justify-center xl:justify-evenly items-end'>
                             {
                                 productData?.product_details?.images?.map((data, i) => {
                                     return (
@@ -763,19 +763,23 @@ const SingleProduct = () => {
                     {/* nutrition chart */}
 
                     <div className='w-full mt-8 mb-6'>
-                        <h1 className='text-[15px] xl:text-[20px] font-[600] poppins py-2'>{productData?.nutrition?.title}</h1>
+                        <h1 className='text-[15px] xl:text-[20px] font-[600] poppins py-2'>Chemical composition</h1>
+                        {/* <h1 className='text-[15px] xl:text-[20px] font-[600] poppins py-2'>{productData?.nutrition?.title}</h1> */}
                         <div className='w-full border-r border-t border-l max-w-[400px]'>
                             <div className='w-full border-b'>
-                                <h1 className='text-[13px] pl-2 font-[600] poppins py-2 text-[#4e4e4e]'>{productData?.nutrition?.title}</h1>
+                                <h1 className='text-[13px] pl-2 font-[600] poppins py-2 text-[#4e4e4e]'>Lorem ipsum dolor sit.</h1>
+                                {/* <h1 className='text-[13px] pl-2 font-[600] poppins py-2 text-[#4e4e4e]'>{productData?.nutrition?.title}</h1> */}
                             </div>
                             {
                                 productData?.nutrition?.values?.map((data, i) => (
                                     <div key={i} className='flex justify-between px-3 border-b text-[#4e4e4e]'>
                                         <div className='w-full flex justify-start items-center border-r text-[13px] poppins font-[500] py-2'>
-                                            {data?.title}
+                                            {/* {data?.title} */}
+                                            lorem
                                         </div>
                                         <div className='w-full flex justify-end items-center border-l text-[13px] poppins font-[500] py-2'>
-                                            {data?.value}
+                                            {/* {data?.value} */}
+                                            ipsum
                                         </div>
                                     </div>
                                 ))

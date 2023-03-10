@@ -6,7 +6,7 @@ import { useRecoilState } from "recoil";
 import cartPageAtom from "../../recoil/atoms/cartPageAtom";
 
 // Media files
-import cross from "../../assets/icons/cross.svg";
+import cross from "../../assets/icons/cross_red.svg";
 import down from '../../assets/icons/down-arrow-thin.svg'
 
 
@@ -215,16 +215,26 @@ const CartPage = () => {
                                                             key={index}
                                                             className="grid grid-cols-[36%_12.5%_12.5%_12.5%_12.5%_12.5%]  my-5"
                                                         >
+
+                                                            {/* image and name */}
                                                             <div className="flex items-center gap-5 ">
                                                                 <span className="w-[70px] h-[70px] inline-block">
                                                                     <img src={VITE_BASE_LINK_2 + data?.image} className='w-full' alt="" />
                                                                 </span>
                                                                 <span className="text-[16px] poppins">{data?.name}</span>
                                                             </div>
+
+                                                            {/* unit price */}
                                                             <div className="text-center flex justify-center items-start gap-2 helvetica"><span className="text-gray-600 text-sm line-through">₹{data?.unit_price}</span><span className="text-[17px]">₹{data?.net_price}</span></div>
-                                                            <div className="text-center">{data?.size}</div>
+
+                                                            {/* pack size */}
+                                                            <div className="text-center">
+                                                                {data?.size}
+                                                            </div>
+
+                                                            {/* quantity */}
                                                             <div className="text-center flex justify-center items-start gap-4 ">
-                                                                <span className="cursor-pointer" onClick={async () => {
+                                                                <button className="cursor-pointer active:scale-[0.95] active:bg-gray-300 border border-gray-200 px-[6px] bg-gray-200 font-[500] rounded-[5px] shadow-md" onClick={async () => {
                                                                     let formdata = new FormData()
                                                                     formdata.append('prod_id', data?.product_id)
                                                                     formdata.append('token', localStorage.getItem('token'))
@@ -250,11 +260,11 @@ const CartPage = () => {
                                                                         // console.log(response?.data)
                                                                         setCartDataApi(response?.data)
                                                                     })
-                                                                }}>-</span>
+                                                                }}>-</button>
 
                                                                 <span> {data?.quantity}</span>
 
-                                                                <span className="cursor-pointer" onClick={async () => {
+                                                                <button className="cursor-pointer active:scale-[0.95] active:bg-gray-300 border border-gray-200 px-[6px] bg-gray-200 font-[500] rounded-[5px] shadow-md" onClick={async () => {
                                                                     let formdata = new FormData()
                                                                     formdata.append('prod_id', data?.product_id)
                                                                     formdata.append('token', localStorage.getItem('token'))
@@ -280,19 +290,23 @@ const CartPage = () => {
                                                                         // console.log(response?.data)
                                                                         setCartDataApi(response?.data)
                                                                     })
-                                                                }}>+</span>
+                                                                }}>+</button>
                                                             </div>
+
+                                                            {/* final price */}
                                                             <div className="flex item-start justify-center  ">
                                                                 <div className="text-[17px] helvetica min-w-[60px]">
                                                                     <span>₹ </span>
                                                                     <span className=""> {data?.price}</span>
                                                                 </div>
                                                             </div>
+
+                                                            {/* remove item */}
                                                             <div className="">
                                                                 <img
                                                                     src={cross}
                                                                     alt="X"
-                                                                    className="cursor-pointer mx-auto w-[15px]"
+                                                                    className="cursor-pointer mx-auto w-full active:scale-[0.8] active:bg-gray-300 rounded-[5px] bg-[#f3f3f37e] shadow-md max-w-[30px]"
                                                                     onClick={async () => {
                                                                         let formdata = new FormData()
                                                                         formdata.append('prod_id', data?.product_id)
@@ -338,7 +352,7 @@ const CartPage = () => {
                                                 </div>
                                                 <div className="w-full flex justify-between items-center my-4">
                                                     <h1 className="text-[14px]">Shipping:</h1>
-                                                    <h1 className="text-[16px] font-[500]">₹ {cartDataApi?.cart_total?.shipping}</h1>
+                                                    <h1 className="text-[16px] font-[500]"> {cartDataApi?.cart_total?.subtotal < 499 ? '₹ ' + cartDataApi?.cart_total?.shipping : <span className="text-green-500">Free</span>} </h1>
                                                 </div>
                                                 {/* <div className="w-full flex justify-between items-center my-4">
                                                     <h1 className="text-[14px]">GST:</h1>
@@ -363,7 +377,7 @@ const CartPage = () => {
                         </div>
 
                         {/* Checkout for mobile */}
-                        <div className="sticky md:static bottom-0 right-0 left-0 md:pr-[170px] py-4 md:py-8 bg-[color:var(--primary-color)] md:bg-white">
+                        <div className="sticky md:static top-[100%] right-0 left-0 md:pr-[170px] py-4 md:py-8 bg-[color:var(--primary-color)] md:bg-white">
                             <div className="w-[85%] mx-auto md:w-full md:mx-0">
                                 <div className="w-full relative mb-4">
                                     <div className="flex md:hidden justify-center gap-2 items-center z-[100]" onClick={() => setPriceBreakdown(!priceBreakdown)}>
