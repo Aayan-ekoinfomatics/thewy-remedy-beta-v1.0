@@ -24,9 +24,9 @@ const ProductCard = (props) => {
     const location = useLocation();
 
 
-    // useEffect(() => {
-    //     console.log("cartData", props)
-    // }, [props]);
+    useEffect(() => {
+        console.log("cartData", props)
+    }, [props]);
 
 
     return (
@@ -72,6 +72,7 @@ const ProductCard = (props) => {
                             }}>
                                 <h1 className='poppins text-[12px] font-[600]'>
                                     {props?.weight[activeIndex]}
+                                    <span className='pl-[1px]'>{props?.weight[activeIndex] >= 50 ? 'g' : 'kg'}</span>
                                 </h1>
                                 {
                                     props?.weight?.length > 1 ?
@@ -83,7 +84,7 @@ const ProductCard = (props) => {
                                                         <div key={i} onClick={() => {
                                                             setVariantDropdown(false);
                                                             setActiveIndex(i)
-                                                        }} className='border-b py-1 text-[12px] poppins cursor-pointer'>{data}</div>
+                                                        }} className='border-b py-1 text-[12px] poppins cursor-pointer'>{data} <span>{Number(data) > 50 ? 'g' : 'kg'}</span></div>
                                                     ))
                                                 }
                                             </div>

@@ -4,7 +4,7 @@ import edit from '../../assets/icons/edit.svg'
 import cross from '../../assets/icons/cross.svg';
 import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
-import { VITE_BASE_LINK, VITE_BASE_LINK_2, VITE_BASE_LINK_3 } from '../../../baseLink';
+import { VITE_BASE_LINK, VITE_BASE_LINK_2, } from '../../../baseLink';
 import { toast } from 'react-toastify';
 import cartPageAtom from '../../recoil/atoms/cartPageAtom';
 import { useRecoilState } from 'recoil';

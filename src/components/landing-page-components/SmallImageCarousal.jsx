@@ -8,7 +8,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import landingPageApiDataAtom from '../../recoil/atoms/landingPageApiDataAtom';
 import { useRecoilState } from 'recoil';
-import { VITE_BASE_LINK, VITE_BASE_LINK_2, VITE_BASE_LINK_3 } from '../../../baseLink';
+import { VITE_BASE_LINK, VITE_BASE_LINK_2, } from '../../../baseLink';
 import { Link } from 'react-router-dom';
 import { Puff } from 'react-loader-spinner';
 import Skeleton, { SkeletonTheme } from 'react-loading-skeleton';
