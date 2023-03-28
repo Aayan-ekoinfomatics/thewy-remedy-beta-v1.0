@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import logo from '../../assets/images/logo_dark.png'
+import logo from '../../assets/icons/thewy_main_2.svg'
+import thewy from '../../assets/images/thewy-main.png'
 import blog from '../../assets/icons/blogs_2.svg'
 import mom_baby from '../../assets/icons/mom&baby.svg'
 import products from '../../assets/icons/products.svg'
@@ -109,8 +110,8 @@ const Navbar = () => {
                 <div className='w-full flex justify-center items-center shadow-md '>
                     <div className='w-[70%] flex justify-start items-center gap-14 pl-14'>
                         <div className='w-fit'>
-                            <NavLink to='/' className='flex justify-center items-center'>
-                                <img src={logo} className="cursor-pointer w-[70px]" alt="" />
+                            <NavLink to='/' className='flex justify-center items-center pb-2'>
+                                <img src={thewy} className="cursor-pointer w-full max-w-[65px]" alt="" />
                                 {/* <div className='w-[70px] h-[70px] border border-gray-500 flex justify-center items-center'>
                                     <p className='text-[12px]'>main Logo</p>
                                 </div> */}

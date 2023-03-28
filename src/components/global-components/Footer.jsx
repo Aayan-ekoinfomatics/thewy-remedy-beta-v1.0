@@ -116,7 +116,7 @@ const Footer = () => {
                           <div>
                             {
                               links?.linkName === facebook &&
-                              <a href='https://www.facebook.com/realvedic1' target='_blank' rel="noreferrer">
+                              <a href='https://www.facebook.com/' target='_blank' rel="noreferrer">
                                 <img
                                   src={links?.linkName}
                                   alt={links?.linkName}
@@ -127,7 +127,7 @@ const Footer = () => {
 
                             {
                               links?.linkName === instagram &&
-                              <a href='https://www.instagram.com/realvedic1/' target='_blank' rel="noreferrer">
+                              <a href='https://www.instagram.com/' target='_blank' rel="noreferrer">
                                 <img
                                   src={links?.linkName}
                                   alt={links?.linkName}
@@ -156,7 +156,7 @@ const Footer = () => {
 
         <div className="flex justify-center items-end h-[200px] w-full ">
           <h1 className="opacity-[35%] text-xs text-[#555555]">
-            © {new Date().getFullYear()} Realvedic Powered by Ekoinfomatics
+            © {new Date().getFullYear()} Thewy Remedy Powered by Ekoinfomatics
           </h1>
         </div>
       </div>

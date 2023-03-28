@@ -39,7 +39,7 @@ const ProductCard = (props) => {
                         {
                             props?.image ?
                                 <Link to={`/single-product/` + props?.id} className='w-full flex justify-center items-center' onClick={() => { }}>
-                                    <img src={VITE_BASE_LINK_2 + props?.image} className='w-[85%] mx-auto' alt="" />
+                                    <img src={VITE_BASE_LINK_2 + props?.image} className='w-[85%] max-w-[400px] mx-auto aspect-square' alt="" />
                                 </Link>
                                 :
                                 <div className='w-full flex justify-center items-center'>
@@ -60,31 +60,30 @@ const ProductCard = (props) => {
                             <div className='w-full xl:w-auto'>
                                 <h1 className='poppins text-[13px]'>{props?.title}</h1>
                             </div>
-                            <div className='w-full max-w-[80px] pt-1 px-[6px] flex justify-end items-center relative gap-2 cursor-pointer' onClick={() => {
-                                // console.log('clicked')
-                                setVariantDropdown(!variantDropdown);
-                                if (selectedProductID) {
-                                    setSelectedProductID(null);
-
-                                } else {
-                                    setSelectedProductID(props?.id)
-                                }
-                            }}>
+                            <div className='w-full max-w-[80px] pt-1 px-[6px] flex justify-end items-center relative gap-2 cursor-pointer' >
                                 <h1 className='poppins text-[12px] font-[600]'>
                                     {props?.weight[activeIndex]}
-                                    <span className='pl-[1px]'>{props?.weight[activeIndex] >= 50 ? 'g' : 'kg'}</span>
                                 </h1>
                                 {
                                     props?.weight?.length > 1 ?
                                         <>
-                                            <span><img src={arrow} className='w-[14px]' alt="" /></span>
+                                            <span onClick={() => {
+                                                // console.log('clicked')
+                                                setVariantDropdown(!variantDropdown);
+                                                if (selectedProductID) {
+                                                    setSelectedProductID(null);
+
+                                                } else {
+                                                    setSelectedProductID(props?.id)
+                                                }
+                                            }}><img src={arrow} className='w-[14px]' alt="" /></span>
                                             <div className={`w-full overflow-hidden absolute top-[100%] transition-all duration-300 bg-white shadow-2xl ${variantDropdown === true ? 'max-h-[120px] px-2 py-3 ease-in z-[150]' : 'max-h-0 ease-out'}`}>
                                                 {
                                                     props?.weight?.map((data, i) => (
                                                         <div key={i} onClick={() => {
                                                             setVariantDropdown(false);
                                                             setActiveIndex(i)
-                                                        }} className='border-b py-1 text-[12px] poppins cursor-pointer'>{data} <span>{Number(data) > 50 ? 'g' : 'kg'}</span></div>
+                                                        }} className='border-b py-1 text-[12px] poppins cursor-pointer'>{data}</div>
                                                     ))
                                                 }
                                             </div>
