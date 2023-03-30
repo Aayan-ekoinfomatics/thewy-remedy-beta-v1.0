@@ -58,8 +58,8 @@ const CartPage = () => {
                             <h1 className="text-[16px] text-[#5B5B5B]">Items</h1>
 
                             {
-                                // cartDataApi?.cartItems?.length > 0 ?
-                                true === true ?
+                                cartDataApi?.cartItems?.length > 0 ?
+                                // true === true ?
                                     <div className="">
                                         {cartDataApi?.cartItems?.map((data, index) => {
                                             return (
@@ -425,13 +425,13 @@ const CartPage = () => {
 
                                             {
                                                 localStorage.getItem('token') ?
-                                                    <div>
+                                                    <div className="mt-5 md:mt-0">
                                                         <Link to='/checkout' className="bg-[#FCF55C] active:scale-[0.96] shadow-md cursor-pointer active:bg-[#ddd650] px-5 py-2 md:p-4 md:px-10 font-[600]  text-[18px] ">
                                                             CHECKOUT
                                                         </Link>
                                                     </div>
                                                     :
-                                                    <div>
+                                                    <div className="mt-5 md:mt-0">
                                                         <Link to='/login' className="bg-[#FCF55C] active:scale-[0.96] cursor-pointer active:bg-[#ddd650] px-5 py-2 shadow-md font-[400]  text-[18px] ">
                                                             Login to checkout
                                                         </Link>

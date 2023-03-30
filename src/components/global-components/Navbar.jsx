@@ -379,7 +379,7 @@ const Navbar = () => {
                     {/* logo */}
                     <span className='w-fit flex items-center'>
                         <Link to='/' className='flex items-center'>
-                            <img src={mobile_logo} className="cursor-pointer w-[34px]" alt="" />
+                            <img src={thewy} className="cursor-pointer w-[34px]" alt="" />
                             {/* <img src={text} className='w-[70px]' alt="" /> */}
                         </Link>
                     </span>

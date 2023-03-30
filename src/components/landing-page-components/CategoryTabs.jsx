@@ -55,7 +55,7 @@ const CategoryTabs = () => {
                         <>
                             {
                                 landingApiData?.tab?.map((data, i) => (
-                                    <Link to={`/all-products/` + data?.id} key={i} className={`w-full flex flex-col lg:flex-row items-center hover:bg-[#e6e6e6] px-2 justify-center gap-3 py-2 ${data?.title === 'Health Mix' ? '' : 'border-r'}`}>
+                                    <Link to={`/all-products/` + data?.id} key={i} className={`w-full flex flex-col lg:flex-row items-center hover:bg-[#e6e6e6] px-2 justify-center gap-3 py-2 ${data?.title === 'All Products' ? '' : 'border-l'}`}>
                                         <div className='w-fit h-full'>
                                             <img src={VITE_BASE_LINK_2 + data?.image} className='w-[30px]' alt="" />
                                         </div>

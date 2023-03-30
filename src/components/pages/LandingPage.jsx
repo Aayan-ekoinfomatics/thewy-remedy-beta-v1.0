@@ -28,9 +28,9 @@ const LandingPage = () => {
     })
   }, [])
 
-  useEffect(() => {
-    console.log(landingApiData)
-  }, [landingApiData])
+  // useEffect(() => {
+  //   console.log(landingApiData)
+  // }, [landingApiData])
 
 
 

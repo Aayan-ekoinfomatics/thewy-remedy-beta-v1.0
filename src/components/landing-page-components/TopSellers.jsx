@@ -31,7 +31,7 @@ const TopSellers = (props) => {
       </div> */}
       {
         landingApiData?.top_seller_products ?
-          <div className='w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:flex gap-4 xl:gap-8 px-5 md:px-10 mb-10'>
+          <div className='w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:flex gap-4 xl:gap-8 px-5 md:px-10 mb-10'>
             {
               landingApiData?.top_seller_products?.map((data, i) => {
                 return (

@@ -25,7 +25,7 @@ const ProductCard = (props) => {
 
 
     useEffect(() => {
-        console.log("cartData", props)
+        // console.log("cartData", props)
     }, [props]);
 
 
