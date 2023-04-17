@@ -13,11 +13,11 @@ const Footer = () => {
       heading: "ABOUT",
       contents: [
         {
-          linkName: "lorem impum",
+          linkName: "Our Story",
           linkTo: "/about-us",
         },
         {
-          linkName: "lorem ipsum dolor",
+          linkName: "Our Products",
           linkTo: "/all-products/0",
         },
         // {
@@ -33,11 +33,11 @@ const Footer = () => {
       heading: "POLICY",
       contents: [
         {
-          linkName: "lorem ipsum dolor sit amet felor",
+          linkName: "Returns & Refunds",
           linkTo: "/cancellation-policy",
         },
         {
-          linkName: "lorem ipsum dolor",
+          linkName: "Terms & Conditions",
           linkTo: "/terms-conditions",
         },
       ],
@@ -224,7 +224,7 @@ const Footer = () => {
 
         <div className="mt-20 mx-auto w-[85%]">
           <h1 className="text-xs text-center pb-5 text-[#555555]">
-            © {new Date().getFullYear()}, Lorem ipsum dolor sit amet.
+            © {new Date().getFullYear()}, <span className="italic">Developed by EkoInfomatics</span>.
           </h1>
         </div>
 
