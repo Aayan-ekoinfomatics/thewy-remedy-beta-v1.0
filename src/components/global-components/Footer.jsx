@@ -18,7 +18,7 @@ const Footer = () => {
         },
         {
           linkName: "Our Products",
-          linkTo: "/all-products/0",
+          linkTo: "/all-products/3",
         },
         // {
         //   linkName: "Online Doctor Appointment",
