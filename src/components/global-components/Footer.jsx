@@ -170,7 +170,6 @@ const Footer = () => {
             return (
               <div key={index}>
                 <h1 className="font-bold mb-5">{data?.heading}</h1>
-
                 <div>
                   {data?.contents?.map((links, index) => {
                     return (
@@ -228,7 +227,7 @@ const Footer = () => {
           </h1>
         </div>
 
-        <div className="bg-[#7B4E41] h-[50px]"></div>
+        <div className="bg-[#926052] h-[50px]"></div>
       </div>
 
 

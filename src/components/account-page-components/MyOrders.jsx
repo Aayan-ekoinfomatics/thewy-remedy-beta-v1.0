@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
-import { VITE_BASE_LINK, VITE_BASE_LINK_2 } from '../../../baseLink';
+import { VITE_BASE_LINK_2 } from '../../../baseLink';
 import item from '../../assets/images/about-us.png'
 
 const MyOrders = () => {

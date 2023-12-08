@@ -1,9 +1,10 @@
 import img from '../assets/images/single_product.png'
 import yt from '../assets/images/youtube.png'
+import vision from '../assets/images/our_vison.png'
 
 const foodDetails = {
     video_data: {
-        video: yt,
+        video: 'https://www.youtube.com/watch?v=d4XJfTrF8kE',
         title: 'Make Best Dosa with us!',
     },
     food: {
@@ -13,9 +14,10 @@ const foodDetails = {
         weight: '250'
     },
     blog: {
-        title: 'Our special recipe!',
-        content: 'Soaking the lentils, rice, making the batter, fermenting the batter calls for time, planning and some prep work. The steps are :',
-        points: ['Soaking rice and lentils', 'Making dosa batter in a blender or mixer-grinder', 'Fermenting dosa batter', 'Making dosa']
+        title: 'Our Vison!',
+        content: 'At Thewy Remedy Pvt Ltd., we strongly believe that our knowledge, actions and customer centric approach will propel us to improve the quality of the life by making quality products accessible to people at an affordable price.:',
+        points: ['Soaking rice and lentils', 'Making dosa batter in a blender or mixer-grinder', 'Fermenting dosa batter', 'Making dosa'],
+        image: vision,
     }
 }
 

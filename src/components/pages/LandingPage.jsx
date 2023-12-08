@@ -42,8 +42,8 @@ const LandingPage = () => {
       <TopSellers />
       <SmallImageCarousal />
       <SingleImageCarousal />
-      {/* <SingleFoodProductSection /> */}
-      {/* <BestOffersSection /> */}
+      <SingleFoodProductSection />  
+      <BestOffersSection />
       {/* <BlogsSection /> */}
     </div>
   )
