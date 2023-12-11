@@ -14,8 +14,9 @@ const BestOffersSection = () => {
 
     useEffect(() => {
         setOfferData(landingApiData?.small_carousal_images?.slice(0, 4));
-        setSingleProductDetails( landingApiData?.small_carousal_images ? landingApiData?.small_carousal_images[0] : '');
-    }, [])
+        setSingleProductDetails(landingApiData?.small_carousal_images?.slice(0, 2));
+    }, [landingApiData])
+    
 
 
     return (

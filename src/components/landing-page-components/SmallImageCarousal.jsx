@@ -93,7 +93,7 @@ const SmallImageCarousal = () => {
                         <div className='w-[96%] mx-auto aspect-square hidden md:grid grid-cols-8 mt-10 gap-5 h-[20vh] justify-center items-center'>
                             {
                                 skeletons?.map((data, i) => (
-                                    <>
+                                    <React.Fragment key={i}>
                                         {/* skeleton */}
                                         <div className='w-full'>
                                             <div className='w-full'>
@@ -104,7 +104,7 @@ const SmallImageCarousal = () => {
                                                 </SkeletonTheme>
                                             </div>
                                         </div>
-                                    </>
+                                    </React.Fragment>
                                 ))
                             }
                         </div>
@@ -142,7 +142,7 @@ const SmallImageCarousal = () => {
                             <div className='w-[90%] mx-auto aspect-square grid md:hidden grid-cols-6  gap-5 h-[10vh] justify-center items-center'>
                                 {
                                     mobile_skeletons?.map((data, i) => (
-                                        <>
+                                        <React.Fragment key={i}>
                                             {/* skeleton */}
                                             <div className='w-full'>
                                                 <div className='w-full'>
@@ -153,7 +153,7 @@ const SmallImageCarousal = () => {
                                                     </SkeletonTheme>
                                                 </div>
                                             </div>
-                                        </>
+                                        </React.Fragment>
                                     ))
                                 }
                             </div>

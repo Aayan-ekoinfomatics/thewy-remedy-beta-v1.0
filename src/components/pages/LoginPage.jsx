@@ -17,10 +17,6 @@ const LoginPage = () => {
 
     const navigate = useNavigate();
 
-    // useEffect(() => {
-    //     console.log(loginData)
-    // }, [loginData])
-
 
     return (
         <div className='w-full flex justify-center items-center h-[80vh] poppins px-4'>
@@ -110,11 +106,11 @@ const LoginPage = () => {
                             <div><h1 className='text-gray-600 poppins text-[14px]'>OR</h1></div>
                             <div className='w-full h-[1px] bg-gray-400'></div>
                         </div>
-                        <Link className='w-full flex justify-center items-center' to='/signup'><button className='rounded-[5px] w-full max-w-[200px] py-2 flex justify-center items-center text-[15px] bg-[color:var(--button-primary)] active:scale-[0.96] active:bg-[#d6cf4c] shadow-md tracking-[1px]'>Sign Up</button></Link>
+                        <div><button className='rounded-[5px] w-full max-w-[200px] py-2 px-4 text-white flex justify-center items-center text-[15px] bg-[#4285F4] active:scale-[0.96] active:bg-[#d6cf4c] shadow-md tracking-[1px]'>Login using google</button></div>
                     </div>
-                    {/* <div className='w-full flex justify-center items-center'>
-                        <Link to='/signup'><h1 className='text-[10px]'>New here? Sign up!</h1></Link>
-                    </div> */}
+                    <div className='w-full flex justify-center items-center mt-5'>
+                        <Link to='/signup'><h1 className='text-[10px]'>New here? <span className='underline'>Sign up!</span></h1></Link>
+                    </div>
                 </div>
             </div>
         </div>

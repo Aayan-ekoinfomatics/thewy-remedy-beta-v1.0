@@ -90,7 +90,7 @@ const SingleFoodProductSection = () => {
                                     <div className='w-full mt-5'>
                                         <h1 className='poppins text-[12px] md:text-[14px] lg:text-[14px] '>{foodDetails?.blog?.content}</h1>
                                     </div>
-                                    <div className='w-[90%] mx-auto mt-6 mb-4 lg:mb-8'>
+                                    <div className='w-[90%] mx-auto mt-14 mb-4 lg:mb-8'>
                                         {/* {
                                             foodDetails?.blog?.points?.map((data, i) => (
                                                 <li key={i} className='poppins text-[12px] md:text-[13px] lg:text-[14px] my-1 md:my-2'>{data}</li>

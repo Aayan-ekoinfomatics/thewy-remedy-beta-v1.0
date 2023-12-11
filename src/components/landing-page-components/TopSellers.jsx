@@ -47,7 +47,7 @@ const TopSellers = (props) => {
 
               {
                 skeletons?.map((data, i) => (
-                  <>
+                  <React.Fragment key={i}>
                     {/* skeleton */}
                     <div className='w-full'>
                       <div className='w-full hidden md:block'>
@@ -65,7 +65,7 @@ const TopSellers = (props) => {
                         </SkeletonTheme>
                       </div>
                     </div>
-                  </>
+                  </React.Fragment>
                 ))
               }
 

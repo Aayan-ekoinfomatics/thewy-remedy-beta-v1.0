@@ -5,7 +5,7 @@ import vision from '../assets/images/our_vison.png'
 const foodDetails = {
     video_data: {
         video: 'https://www.youtube.com/watch?v=d4XJfTrF8kE',
-        title: 'Make Best Dosa with us!',
+        title: 'Some of our remedies!',
     },
     food: {
         title: 'Kokum Rasam | Instant Mix',

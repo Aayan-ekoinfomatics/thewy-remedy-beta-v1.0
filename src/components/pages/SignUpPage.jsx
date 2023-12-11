@@ -191,11 +191,11 @@ const SignUpPage = () => {
                             <div><h1 className='text-gray-600 poppins text-[14px]'>OR</h1></div>
                             <div className='w-full h-[1px] bg-gray-300'></div>
                         </div>
-                        <Link to='/login' className='w-full flex justify-center items-center'><button className='w-[50%] rounded-[5px] mx-auto py-2 flex justify-center items-center text-[15px] bg-[color:var(--button-primary)] active:scale-[0.96] active:bg-[#d6cf4c] shadow-md tracking-[1px]'>Login</button></Link>
+                        <div className='w-full flex justify-center items-center'><button className='w-[50%] rounded-[5px] mx-auto py-2 flex justify-center items-center text-[15px] bg-[#4285F4] text-white active:scale-[0.96] active:bg-[#d6cf4c] shadow-md tracking-[1px]'>Signup with <span className='ml-1.5'>google</span></button></div>
                     </div>
-                    {/* <div className='w-full flex justify-center items-center'>
-                        <Link to='/login'><h1 className='text-[10px]'>Already have an account? Log in.</h1></Link>
-                    </div> */}
+                    <div className='w-full flex justify-center items-center mt-5'>
+                        <Link to='/login'><h1 className='text-[10px]'>Already have an account? <span className='underline'>Log in</span>.</h1></Link>
+                    </div>
                 </div>
             </div>
         </div>
