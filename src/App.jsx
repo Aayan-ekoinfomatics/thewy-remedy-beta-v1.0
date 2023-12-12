@@ -38,6 +38,7 @@ import cartPageAtom from './recoil/atoms/cartPageAtom'
 import { atom, useRecoilState } from 'recoil'
 import cartProductIDs from './recoil/atoms/cartProductsIDs'
 import 'react-loading-skeleton/dist/skeleton.css'
+import SingleBlogPage from './components/pages/SingleBlogPage'
 
 
 function App() {
@@ -97,6 +98,7 @@ function App() {
             <Route path='/about-us' element={<AboutUsPage />} />
             <Route path='/cart' element={<Cart />} />
             <Route path='/blogs' element={<Blogs />} />
+            <Route path='/blogs/:blog_id' element={<SingleBlogPage />} />
             <Route path='/doctors' element={<DoctorsPage />} />
             <Route path='/cancellation-policy' element={<CancellationPolicyPage />} />
             <Route path='/terms-conditions' element={<TermsAndConditionsPage />} />

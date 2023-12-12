@@ -20,7 +20,7 @@ const SingleFoodProductSection = () => {
     }, [landingApiData])
 
     const opts = {
-        height: 300,
+        height: 400,
         width: "100%",
     };
 
@@ -31,7 +31,7 @@ const SingleFoodProductSection = () => {
                     <div className='flex flex-col lg:flex-row justify-center gap-8'>
 
                         <div className='flex-1 bg-[color:var(--primary-color)] rounded-[15px] pb-6 md:pb-14'>
-                            <h1 className='poppins text-[15px] md:text-[18px] font-[500] py-4 text-center'>{foodDetails?.video_data?.title}</h1>
+                            <h1 className='poppins text-[19px] md:text-[20px] font-[500] pt-4 text-center'>{foodDetails?.video_data?.title}</h1>
                             <div className='w-full flex justify-center items-center h-full'>
                                 {/* <img src={VITE_BASE_LINK + foodDetails?.video_data?.video} className='max-h-[350px] w-full' alt="" /> */}
                                 <YouTube
@@ -55,7 +55,7 @@ const SingleFoodProductSection = () => {
                         <div className='flex-1 rounded-[15px] shadow-md border'>
                             <div className='max-w-[90%] mx-auto'>
                                 <div className='flex justify-center items-center w-full'>
-                                    <p className='w-fit poppins text-[15px] md:text-[18px] font-[500] py-2 bg-gray-200 rounded-b-[8px] px-3'>One of our best</p>
+                                    <p className='w-fit poppins text-[15px] md:text-[18px] font-[500] py-2 bg-gray-200 rounded-b-[8px] px-6'>One of our best</p>
                                 </div>
                                 <div className=' mx-auto flex justify-center items-center mt-2'>
                                     <img src={VITE_BASE_LINK_2 + landingApiData?.single_product_details?.food?.image} className='max-w-[300px]' alt="" />
@@ -83,8 +83,8 @@ const SingleFoodProductSection = () => {
 
 
 
-                        <div className='flex-1 bg-[color:var(--primary-color)] rounded-[15px]'>
-                            <p className='poppins text-[15px] md:text-[18px] font-[500] py-4 text-center'>{foodDetails?.blog?.title}</p>
+                        <div className='flex-1 bg-white border shadow-md rounded-[15px]'>
+                            <p className='poppins text-[15px] md:text-[18px] font-[500] py-4 bg-gray-200 rounded-t-[15px] text-center'>{foodDetails?.blog?.title}</p>
                             <div className='w-full flex flex-col justify-center items-center'>
                                 <div className='w-[86%] md:w-[80%] mx-auto mb-2'>
                                     <div className='w-full mt-5'>
