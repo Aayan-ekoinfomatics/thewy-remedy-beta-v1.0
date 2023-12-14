@@ -47,32 +47,6 @@ const Navbar = () => {
 
     const location = useLocation()
 
-    // const [cartData, setCartData] = useState();
-
-    // const [mockProducts, setMockProducts] = useState([
-    //     { title: 'Dosa Mix', id: 0, image: item, category: 'Dosa', },
-    //     { title: 'Rasam Kokum', id: 1, image: item, category: 'Rasam & Soups', },
-    //     { title: 'Flour', id: 2, image: item, category: 'Wheat & Rice', },
-    //     { title: 'Kokum Rasam', id: 3, image: item, category: 'Rasam & Soups', },
-    //     { title: 'Dosa Mix', id: 4, image: item, category: 'Dosa', },
-    //     { title: 'Rasam Mix', id: 5, image: item, category: 'Rasam & Soups', },
-    //     { title: 'Flour', id: 6, image: item, category: 'Wheat & Rice', },
-    //     { title: 'Kokum Rasam', id: 7, image: item, category: 'Rasam & Soups', },
-    //     { title: 'Dosa Mix', id: 8, image: item, category: 'Dosa', },
-    //     { title: 'Rasam Mix', id: 9, image: item, category: 'Rasam & Soups', },
-    //     { title: 'Flour', id: 10, image: item, category: 'Wheat & Rice', },
-    //     { title: 'Vegitable masala | Chillie', id: 11, image: item, category: 'Masala & Powders', },
-    //     { title: 'Kokum Rasam', id: 12, image: item, category: 'Rasam & Soups', },
-    //     { title: 'Rasam Mix', id: 13, image: item, category: 'Rasam & Soups', },
-    //     { title: 'Flour', id: 14, image: item, category: 'Wheat & Rice', },
-    //     { title: 'Vegitable masala | Chillie', id: 15, image: item, category: 'Masala & Powders', },
-    //     { title: 'Kokum Rasam', id: 16, image: item, category: 'Rasam & Soups', },
-    //     { title: 'Dosa Mix', id: 17, image: item, category: 'Dosa', },
-    //     { title: 'Rasam Mix', id: 18, image: item, category: 'Rasam & Soups', },
-    //     { title: 'Flour', id: 19, image: item, category: 'Wheat & Rice', },
-    //     { title: 'Vegitable masala | Chillie', id: 20, image: item, category: 'Masala & Powders', },
-    // ]);
-
     useEffect(() => {
         if (cartView === true) {
             let formdata = new FormData();
@@ -96,11 +70,6 @@ const Navbar = () => {
         setSearchData('')
         setCartView(false)
     }, [location?.pathname])
-
-
-    // useEffect(() => {
-    //     console.log(allproductsApiData)
-    // }, [allproductsApiData])
 
 
     return (

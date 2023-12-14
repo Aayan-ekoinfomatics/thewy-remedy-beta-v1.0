@@ -184,14 +184,14 @@ const SignUpPage = () => {
                     {/* <div className='w-full flex justify-end items-center'>
                         <h1 className='text-[10px]'>Forgot password ?</h1>
                     </div> */}
-                    <div className='w-full my-2'>
+                    <div className='w-full my-8'>
                         <button className='w-[50%] rounded-[5px] mx-auto py-2 flex justify-center items-center text-[15px] bg-[color:var(--button-primary)] active:scale-[0.96] active:bg-[#d6cf4c] shadow-md tracking-[1px]' onClick={signUp}>Sign Up</button>
-                        <div className='w-[40%] mx-auto flex justify-center items-center gap-3 my-3'>
+                        {/* <div className='w-[40%] mx-auto flex justify-center items-center gap-3 my-3'>
                             <div className='w-full h-[1px] bg-gray-300'></div>
                             <div><h1 className='text-gray-600 poppins text-[14px]'>OR</h1></div>
                             <div className='w-full h-[1px] bg-gray-300'></div>
                         </div>
-                        <div className='w-full flex justify-center items-center'><button className='w-[50%] rounded-[5px] mx-auto py-2 flex justify-center items-center text-[15px] bg-[#4285F4] text-white active:scale-[0.96] active:bg-[#d6cf4c] shadow-md tracking-[1px]'>Signup with <span className='ml-1.5'>google</span></button></div>
+                        <div className='w-full flex justify-center items-center'><button className='w-[50%] rounded-[5px] mx-auto py-2 flex justify-center items-center text-[15px] bg-[#4285F4] text-white active:scale-[0.96] active:bg-[#d6cf4c] shadow-md tracking-[1px]'>Signup with <span className='ml-1.5'>google</span></button></div> */}
                     </div>
                     <div className='w-full flex justify-center items-center mt-5'>
                         <Link to='/login'><h1 className='text-[10px]'>Already have an account? <span className='underline'>Log in</span>.</h1></Link>

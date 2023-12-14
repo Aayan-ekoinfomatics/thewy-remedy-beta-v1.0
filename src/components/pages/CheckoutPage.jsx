@@ -203,7 +203,7 @@ const CheckoutPage = () => {
             <h1 className='text-[35px] font-[600] my-[40px] text-center md:text-left'>Checkout</h1>
 
 
-            <div className='w-[90%] xl:w-[80%] mx-auto bg-[#] mb-20'>
+            <div className='w-[90%] xl:w-[80%] mx-auto bg-[#] mb-10'>
 
 
 

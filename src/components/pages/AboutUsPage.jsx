@@ -2,6 +2,7 @@
 import React from "react";
 // Media Files
 import picture from "../../assets/images/thewy_director.jpg";
+import picture_2 from "../../assets/images/thewy_senior.png";   
 import sample from "../../assets/images/about-us.png";
 const AboutUsPage = () => {
     // team

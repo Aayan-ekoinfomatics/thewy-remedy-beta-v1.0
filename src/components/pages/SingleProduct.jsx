@@ -322,13 +322,15 @@ const SingleProduct = () => {
                                                     })
                                                 }
                                             }}>-</div>
-                                            {
-                                                cartData?.cartItems?.map((data, i) => {
-                                                    if (data?.product_id == productData?.product_details?.id && packSizeSelect?.weight === data?.size) {
-                                                        return <div key={i} className='bg-white w-full border flex justify-center items-center py-[3px]'>{data?.quantity}</div>
-                                                    }
-                                                })
-                                            }
+                                            <div className='bg-white w-full border flex justify-center items-center py-[3px]'>
+                                                {
+                                                    cartData?.cartItems?.map((data, i) => {
+                                                        if (data?.product_id == productData?.product_details?.id && packSizeSelect?.weight === data?.size) {
+                                                            return <div key={i}>{data?.quantity ? data?.quantity : '...'}</div>
+                                                        }
+                                                    })
+                                                }
+                                            </div>
                                             <div className='w-[15%] flex justify-center items-center py-1 shadow-md active:scale-[0.96] bg-[color:var(--button-primary)] cursor-pointer' onClick={async () => {
                                                 let formdata = new FormData()
                                                 formdata.append('prod_id', productData?.product_details?.id)

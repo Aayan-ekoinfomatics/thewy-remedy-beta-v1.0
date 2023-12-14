@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import logo from '../../assets/images/realvedic-logo.png'
+import logo from '../../assets/images/thewy-main.png'
 import eye_open from '../../assets/icons/eye-open.svg'
 import eye_closed from '../../assets/icons/eye-closed.svg'
 import fb from '../../assets/icons/facebook-blue.svg'
@@ -38,12 +38,12 @@ const LoginPage = () => {
                     <span className='w-full bg-[#000] h-[1px]'></span>
                 </div> */}
 
-                <div className='w-fit'>
-                    {/* <img src={logo} className='w-full max-w-[150px]' alt="" /> */}
+                <div className='w-fit mb-10'>
+                    <img src={logo} className='w-full max-w-[150px]' alt="" />
                 </div>
 
 
-                <div className='w-full bg-gray-100 p-4 shadow-md rounded-[5px]'>
+                <div className='w-full bg-gray-100 p-4 shadow-md rounded-[5px] pt-8'>
                     <div className='w-full flex flex-col my-2'>
                         <label htmlFor="email" className='text-[12px]'>Email</label>
                         <input type="text" name='email' className='border py-2 outline-none px-2 text-[13px]' onChange={(e) => {
@@ -65,7 +65,7 @@ const LoginPage = () => {
                     {/* <div className='w-full flex justify-end items-center'>
                         <h1 className='text-[10px]'>Forgot password ?</h1>
                     </div> */}
-                    <div className='w-full my-2 flex flex-col items-center pt-5 gap-3'>
+                    <div className='w-full my-8 flex flex-col items-center pt-5 gap-3'>
                         <button className='rounded-[5px] w-full max-w-[200px] py-2 flex justify-center items-center text-[15px] bg-[color:var(--button-primary)] active:scale-[0.96] active:bg-[#d6cf4c] shadow-md tracking-[1px]' onClick={() => {
                             let formdata = new FormData()
                             formdata.append('email', loginData?.email)
@@ -101,12 +101,12 @@ const LoginPage = () => {
                                 }
                             })
                         }}>Login</button>
-                        <div className='w-[40%] mx-auto flex justify-center items-center gap-3'>
+                        {/* <div className='w-[40%] mx-auto flex justify-center items-center gap-3'>
                             <div className='w-full h-[1px] bg-gray-400'></div>
                             <div><h1 className='text-gray-600 poppins text-[14px]'>OR</h1></div>
                             <div className='w-full h-[1px] bg-gray-400'></div>
                         </div>
-                        <div><button className='rounded-[5px] w-full max-w-[200px] py-2 px-4 text-white flex justify-center items-center text-[15px] bg-[#4285F4] active:scale-[0.96] active:bg-[#d6cf4c] shadow-md tracking-[1px]'>Login using google</button></div>
+                        <div><button className='rounded-[5px] w-full max-w-[200px] py-2 px-4 text-white flex justify-center items-center text-[15px] bg-[#4285F4] active:scale-[0.96] active:bg-[#d6cf4c] shadow-md tracking-[1px]'>Login using google</button></div> */}
                     </div>
                     <div className='w-full flex justify-center items-center mt-5'>
                         <Link to='/signup'><h1 className='text-[10px]'>New here? <span className='underline'>Sign up!</span></h1></Link>
