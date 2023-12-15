@@ -103,6 +103,8 @@ function App() {
             <Route path='/cancellation-policy' element={<CancellationPolicyPage />} />
             <Route path='/terms-conditions' element={<TermsAndConditionsPage />} />
             {/* <Route path='/test' element={<ProductCard id='2' title='Test Product' image='' weight='250' price='100' />} /> */}
+
+            
           </Routes>
         </div>
         <Footer />

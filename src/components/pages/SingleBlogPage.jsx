@@ -57,10 +57,10 @@ const SingleBlogPage = () => {
     };
 
     return (
-        <div className='w-full pt-10 px-[300px]'>
+        <div className='w-full pt-10 px-[40px] lg:px-[100px] xl:px-[300px]'>
             {/* heading */}
             <div className='w-full py-16'>
-                <h1 className='poppins text-5xl font-[500] text-center'>Nurturing Skin Health with Precision</h1>
+                <h1 className='poppins text-3xl md:text-5xl font-[500] text-center'>Nurturing Skin Health with Precision</h1>
             </div>
             <div className='w-full mt-16'>
                 <h1 className='font-[500] text-[19px] mb-2'>{blog_data?.introduction?.title}: </h1>
