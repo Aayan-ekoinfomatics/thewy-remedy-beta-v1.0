@@ -6,9 +6,11 @@
 
 
 :root {
-  --primary-color: #d4d4d4;
+  /* --primary-color: #d4d4d4; */
   /* --primary-color: #FDCAB5; */
-  --button-primary: #FCF55C;
+  --button-primary: #7dd4b3;
+  /* --button-primary: #FCF55C; */
+  --primary-color: #7dd4b3;
   /* --primary-color: #64c9a2; */
   
 }

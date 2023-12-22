@@ -18,7 +18,7 @@ const Sidebar = () => {
 
   const [sidebarToggle, setSidebarToggle] = useRecoilState(sidebarAtom);
 
-  const [sidebarCategory, setSidebarCategory] = useState();
+  const [sidebarCategory, setSidebarCategory] = useState([]);
 
   const [categoryDropDown, setCategoryDropDown] = useState(null);
 
@@ -26,18 +26,13 @@ const Sidebar = () => {
 
   const [sarchData, setSearchData] = useState();
 
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   useEffect(() => {
     axios.get(VITE_BASE_LINK_2 + 'NavbarCategoryView').then((response) => {
-      // console.log(response?.data)
       setSidebarCategory(response?.data)
     })
   }, [])
-
-
-
-  // console.log(sidebarToggle)
 
   return (
     <>
@@ -105,22 +100,22 @@ const Sidebar = () => {
             <NavLink to='/account' className='w-full flex px-5 border-b justify-start gap-2 cursor-pointer' onClick={() => setSidebarToggle(false)}>
               {/* <img src={profile} className="w-full max-w-[25px]" alt="" /> */}
               <h1 className='text-[14px] poppins py-3'>Account</h1>
-            </NavLink>  
+            </NavLink>
             <NavLink to='/about-us' className='w-full flex px-5 border-b justify-start gap-2 cursor-pointer' onMouseEnter={() => setCartView(true)} onMouseLeave={() => setCartView(false)}>
-            <h1 className='text-[14px] poppins py-3'>About Us</h1>
-          </NavLink>
+              <h1 className='text-[14px] poppins py-3'>About Us</h1>
+            </NavLink>
           </div>
 
 
           {/* logout */}
           <div className='w-full py-4 absolute bottom-0 left-0 right-0 mb-10'>
             <div className='w-full poppins flex justify-center gap-3 items-center px-5' onClick={() => {
-                setSidebarToggle(false)
-                localStorage.clear();
-                navigate('/login');
-              }}>
+              setSidebarToggle(false)
+              localStorage.clear();
+              navigate('/login');
+            }}>
               <p className='text-[15px] poppins'>Logout</p>
-              <img src={logout} className='w-[26px]'  alt="" />
+              <img src={logout} className='w-[26px]' alt="" />
             </div>
           </div>
         </div>

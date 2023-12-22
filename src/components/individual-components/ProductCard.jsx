@@ -212,7 +212,7 @@ const ProductCard = (props) => {
                                                             </h1>
                                                         </div>
                                                     </div>
-                                                    <button className='bg-[#FCF55C] rounded-[5px] w-full max-w-[80px] active:bg-[#f5ec4b] px-3 shadow-md py-[2px] poppins text-[15px] font-[500] cursor-pointer active:scale-[0.98]' onClick={async () => {
+                                                    <button className='bg-[color:var(--button-primary)] rounded-[5px] w-full max-w-[80px] active:bg-[#f5ec4b] px-3 shadow-md py-[2px] poppins text-[15px] font-[500] cursor-pointer active:scale-[0.98]' onClick={async () => {
                                                         let formdata = new FormData();
                                                         // console.log(props.id)
                                                         formdata.append('product_id', props?.id);
@@ -265,7 +265,7 @@ const ProductCard = (props) => {
                                                 </h1>
                                             </div>
                                         </div>
-                                        <button className='bg-[#FCF55C] rounded-[5px] w-full max-w-[80px] active:bg-[#f5ec4b] px-3 shadow-md py-[2px] poppins text-[15px] font-[500] cursor-pointer active:scale-[0.98]' onClick={async () => {
+                                        <button className='bg-[color:var(--button-primary)] rounded-[5px] w-full max-w-[80px] active:bg-[#f5ec4b] px-3 shadow-md py-[2px] poppins text-[15px] font-[500] cursor-pointer active:scale-[0.98]' onClick={async () => {
                                             let formdata = new FormData();
                                             // console.log(props.id)
                                             formdata.append('product_id', props?.id);

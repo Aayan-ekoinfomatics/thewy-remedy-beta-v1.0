@@ -7,15 +7,10 @@ import landingPageApiDataAtom from '../../recoil/atoms/landingPageApiDataAtom';
 const MobileCategories = () => {
 
     const [landingApiData, setLandingApiData] = useRecoilState(landingPageApiDataAtom);
-
-    // useEffect(() => {
-    //   console.log(landingApiData)
-    // }, [])
     
-
-
     return (
         <div className='block md:hidden w-full'>
+
             <div className='w-full grid grid-cols-2 sm:grid-cols-4 gap-4 px-4 pt-4'>
                 {
                     landingApiData?.tab?.map((data, i) => (
@@ -30,6 +25,7 @@ const MobileCategories = () => {
                     ))
                 }
             </div>
+            
         </div>
     )
 }

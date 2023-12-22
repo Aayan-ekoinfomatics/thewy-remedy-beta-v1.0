@@ -53,15 +53,15 @@ const SingleFoodProductSection = () => {
 
 
                         <div className='flex-1 rounded-[15px] shadow-md border'>
-                            <div className='max-w-[90%] mx-auto'>
+                            <div className='max-w-[90%] h-full flex flex-col justify-between mx-auto'>
                                 <div className='flex justify-center items-center w-full'>
                                     <p className='w-fit poppins text-[15px] md:text-[18px] font-[500] py-2 bg-gray-200 rounded-b-[8px] px-6'>One of our best</p>
                                 </div>
-                                <div className=' mx-auto flex justify-center items-center mt-2'>
+                                <div className=' mx-auto flex justify-center items-center mt-10'>
                                     <img src={VITE_BASE_LINK_2 + landingApiData?.single_product_details?.food?.image} className='max-w-[300px]' alt="" />
                                 </div>
-                                <div className=' mx-auto flex justify-between my-1'>
-                                    <div className='max-w-[130px]'>
+                                <div className='w-full mx-auto flex justify-between my-1'>
+                                    <div className='max-w-[130px] md:max-w-full'>
                                         <p className='poppins text-[13px] md:text-[18px]  font-[600]'>{landingApiData?.single_product_details?.food?.title}</p>
                                     </div>
                                     <div>
@@ -71,8 +71,8 @@ const SingleFoodProductSection = () => {
                                 </div>
                                 <div className=' flex justify-end mb-2 mt-4'>
                                     <div className='w-full flex flex-col items-end pr-8 md:pr-0'>
-                                        <button className='bg-[#FCF55C] active:scale-[0.96] active:bg-[#dad24a] text-[13px] md:text-[15px] px-2 md:px-4 py-1 '>ADD TO CART</button>
-                                        <p className='text-[12px] md:text-[13px] underline cursor-pointer'>View more</p>
+                                        {/* <button className='bg-[color:var(--button-primary)] active:scale-[0.96] active:bg-[#dad24a] text-[13px] md:text-[15px] px-2 md:px-4 py-1 '>ADD TO CART</button> */}
+                                        <p className='text-[12px] md:text-[13px] bg-[color:var(--button-primary)] px-4 py-2 rounded-[8px] cursor-pointer'>View more</p>
                                     </div>
                                 </div>
                             </div>

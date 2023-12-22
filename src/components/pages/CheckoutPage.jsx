@@ -21,7 +21,7 @@ const CheckoutPage = () => {
 
 
 
-    // this function will handel payment when user submit his/her money
+    // this function will handele payment when user submit his/her money
     // and it will confim if payment is successfull or not
 
     const handlePaymentSuccess = async (response) => {
@@ -124,15 +124,23 @@ const CheckoutPage = () => {
         // in data we will receive an object from the backend with the information about the payment
         //that has been made by the user
 
+        const razorpayKeyId = import.meta.env.VITE_REACT_APP_RAZORPAY_KEY_ID;
+        const razorpayKeySecret = import.meta.env.VITE_REACT_APP_RAZORPAY_KEY_SECRET;
+
+        console.log("Razorpay Key ID:", razorpayKeyId);
+        console.log("Razorpay Key Secret:", razorpayKeySecret);
+
         var options = {
-            key_id: import.meta.env.REACT_APP_RAZORPAY_KEY_ID, // in react your environment variable must start with REACT_APP_
-            key_secret: import.meta.env.REACT_APP_RAZORPAY_KEY_SECRET,
+            // key_id: import.meta.env.VITE_REACT_APP_RAZORPAY_KEY_ID,
+            // key_secret: import.meta.env.VITE_REACT_APP_RAZORPAY_KEY_SECRET,
+            key_id: razorpayKeyId,
+            key_secret: razorpayKeySecret,
             amount: data.data.payment.amount,
             currency: "INR",
             name: "Thewy Remedy",
             description: "Test teansaction",
             image: "", // add image url
-            order_id: data.data.payment.id,
+            order_id: data.data.order.id,
             handler: function (response) {
                 // we will handle success by calling handlePaymentSuccess method and
                 // will pass the response that we've got from razorpay
@@ -278,13 +286,13 @@ const CheckoutPage = () => {
                                     <h1 className='text-[13px]'>Rs {checkoutData?.item_total}</h1>
                                 </div>
                                 {/* <div className='flex justify-between md:w-[60%] gap-2 items-center'>
-                                    <h1 className='text-[13px]'>Discount:</h1>
-                                    <h1 className='text-[13px]'></h1>
-                                </div> */}
+                                        <h1 className='text-[13px]'>Discount:</h1>
+                                        <h1 className='text-[13px]'></h1>
+                                    </div> */}
                                 {/* <div className='flex justify-between md:w-[60%] gap-2 items-center'>
-                                    <h1 className='text-[13px]'>Tax:</h1>
-                                    <h1 className='text-[13px]'>Rs {checkoutData?.tax}</h1>
-                                </div> */}
+                                        <h1 className='text-[13px]'>Tax:</h1>
+                                        <h1 className='text-[13px]'>Rs {checkoutData?.tax}</h1>
+                                    </div> */}
                                 <div className='flex justify-between md:w-[60%] gap-2 items-center'>
                                     <h1 className='text-[13px]'>Delivery charges:</h1>
                                     <h1 className='text-[13px]'>Rs {checkoutData?.delivery_charges}</h1>

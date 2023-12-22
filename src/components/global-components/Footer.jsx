@@ -227,7 +227,7 @@ const Footer = () => {
           </h1>
         </div>
 
-        <div className="bg-[#926052] h-[50px]"></div>
+        <div className="bg-[var:(--primary-color)] border-t h-[50px]"></div>
       </div>
 
 
